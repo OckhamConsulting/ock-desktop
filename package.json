@@ -1,26 +1,25 @@
 {
   "private": true,
-  "name": "ockham-desktop-wallet",
+  "name": "ark-desktop-wallet",
   "version": "2.2.1",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OckhamConsulting/ockham-desktop.git"
+    "url": "git+https://github.com/ArkEcosystem/desktop-wallet.git"
   },
-  "author": "Ockham Consulting <contact@ockham.consulting>",
+  "author": "ArkEcosystem <info@ark.io>",
   "contributors": [
     "Alex Barnsley <alex@ark.io>",
     "ItsANameToo <itsanametoo@protonmail.com>",
     "Juan A. Martín <juan@ark.io>",
     "Lúcio Rubens <lucio@ark.io>",
-    "Mario Vega <mario@ark.io>",
-    "Luc TALARICO <lceo@ockham.consulting>"
+    "Mario Vega <mario@ark.io>"
   ],
-  "description": "Ockham Consulting Desktop Wallet",
+  "description": "Ark Ecosystem Desktop Wallet",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/OckhamConsulting/ockham-desktop/issues"
+    "url": "https://github.com/ArkEcosystem/desktop-wallet/issues"
   },
-  "homepage": "https://github.com/OckhamConsulting/ockham-desktop#readme",
+  "homepage": "https://github.com/ArkEcosystem/desktop-wallet#readme",
   "main": "./dist/electron/main.js",
   "scripts": {
     "build": "node .electron-vue/build.js && electron-builder",
@@ -165,14 +164,14 @@
     "webpack-hot-middleware": "^2.24.3"
   },
   "build": {
-    "productName": "Ockham Desktop Wallet",
-    "appId": "io.ockham.desktop-wallet",
+    "productName": "Ark Desktop Wallet",
+    "appId": "io.ark.desktop-wallet",
     "compression": "maximum",
     "artifactName": "${name}-${os}-${arch}-${version}.${ext}",
     "protocols": {
-      "name": "Ockham URI scheme",
+      "name": "Ark URI scheme",
       "schemes": [
-        "ockham"
+        "ark"
       ],
       "role": "Viewer"
     },
@@ -192,7 +191,7 @@
     },
     "linux": {
       "category": "Utility",
-      "executableName": "ockham-desktop-wallet",
+      "executableName": "ark-desktop-wallet",
       "icon": "build/icons",
       "target": [
         "AppImage",
